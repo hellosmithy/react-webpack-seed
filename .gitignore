@@ -1,0 +1,9 @@
+node_modules
+build/*
+dist
+logs
+*.log
+.DS_Store
+app/views/DevView
+app/stores/DevStore.js
+app/actions/DevActions.js
