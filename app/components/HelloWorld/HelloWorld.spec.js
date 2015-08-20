@@ -2,7 +2,7 @@ import { default as chai, expect } from 'chai';
 
 import React from 'react/addons';
 import spies from 'chai-spies';
-import HelloWorld from './HelloWorld.jsx';
+import HelloWorld from './HelloWorld';
 
 const TestUtils = React.addons.TestUtils;
 

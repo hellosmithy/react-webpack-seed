@@ -16,7 +16,7 @@ import styles from './App.css';
 import { Router } from 'react-router';
 import { history } from 'react-router/lib/BrowserHistory';
 
-import HelloWorldContainer from 'containers/HelloWorldContainer.jsx';
+import HelloWorldContainer from 'containers/HelloWorldContainer';
 
 export default class App extends React.Component {
 

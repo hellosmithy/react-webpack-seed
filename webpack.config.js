@@ -69,9 +69,13 @@ module.exports = {
 			template: './templates/index.html',
 			inject: true,
 			favicon: './app/favicon.ico'
+		}),
+		new webpack.DefinePlugin({
+			__DEV__: DEV_ENV
 		})
 	],
 	resolve: {
-		modulesDirectories: ['node_modules', 'app']
+		modulesDirectories: ['node_modules', 'app'],
+		extensions: ['', '.js', '.jsx']
 	}
 };

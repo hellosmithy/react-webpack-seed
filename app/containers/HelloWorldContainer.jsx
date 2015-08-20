@@ -2,7 +2,7 @@ import React from 'react/addons';
 
 import HelloWorldStore from 'stores/HelloWorldStore';
 import HelloWorldActions from 'actions/HelloWorldActions';
-import HelloWorld from 'components/HelloWorld/HelloWorld.jsx';
+import HelloWorld from 'components/HelloWorld/HelloWorld';
 
 export default class HelloWorldContainer extends React.Component {
 

@@ -20,9 +20,10 @@
     "prebuild": "cleandir ./build",
     "build": "webpack --history-api-fallback",
     "postbuild": "cp ./app/htaccess ./build/.htaccess",
-    "test": "NODE_ENV=test ./node_modules/karma/bin/karma start",
+    "test": "NODE_ENV=test karma start",
     "dev": "NODE_ENV=development webpack-dev-server --devtool eval --progress --colors --hot --content-base build --history-api-fallback",
-    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
+    "predeploy": "npm run build",
+    "deploy": "NODE_ENV=production webpack --progress -p"
   },
   "dependencies": {
     "alt": "^0.17.1",
@@ -39,6 +40,7 @@
     "babel-loader": "^5.3.2",
     "chai": "^3.2.0",
     "chai-spies": "^0.7.0",
+    "clean-dir": "^1.0.3",
     "css-loader": "^0.16.0",
     "cssnext-loader": "^1.0.1",
     "eslint": "^1.2.0",
@@ -59,6 +61,7 @@
     "react-hot-loader": "^1.2.8",
     "sinon": "^1.15.4",
     "style-loader": "^0.12.3",
+    "uglify-loader": "^1.2.0",
     "webpack": "^1.11.0",
     "webpack-dev-server": "^1.10.1"
   }

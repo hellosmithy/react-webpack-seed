@@ -1,4 +1,4 @@
 'use strict';
 
 import 'react';
-import './App.jsx';
+import './App';
