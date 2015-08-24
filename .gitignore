@@ -5,5 +5,5 @@ logs
 *.log
 .DS_Store
 app/views/DevView
-app/stores/DevStore.js
-app/actions/DevActions.js
+app/flux/stores/DevStore.js
+app/flux/actions/DevActions.js

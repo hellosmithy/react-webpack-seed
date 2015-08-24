@@ -1,5 +1,5 @@
 import alt from 'flux/alt';
-import HelloWorldActions from 'actions/HelloWorldActions';
+import HelloWorldActions from 'flux/actions/HelloWorldActions';
 
 class HelloWorldStore {
 
